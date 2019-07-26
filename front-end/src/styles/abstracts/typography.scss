@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600&display=swap');
+@import url('https://fonts.googleapis.com/
+  css?family=Montserrat:100,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import "./colors";
+
+@mixin set_title_font {
+  font-family: 'Open Sans', Arial, sans serif;
+  font-weight: 300;
+}
+
+@mixin set_font_montserrat {
+  font-family: 'Montserrat', sans-serif;
+  color: $slightly-blue-gray;
+}
+
+@mixin set_font_opensans {
+  font-family: 'Open Sans', Arial, sans serif;
+}
+
+@mixin remove_link_styles {
+  text-decoration: none;
+  color: $slightly-blue-white;
+
+  &:hover {
+    text-decoration: none;
+    color: darken($slightly-blue-white, 0.5);
+  }
+}

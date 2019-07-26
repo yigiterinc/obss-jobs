@@ -1,0 +1,8 @@
+
+@mixin button_link_decoration_reset {
+   text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+}
